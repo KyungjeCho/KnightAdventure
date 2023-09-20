@@ -14,6 +14,9 @@ public class MonsterData : BaseData
 
     public MonsterData() { }
 
+    /// <summary>
+    /// CSV 파일을 읽고 Clips를 만든다.
+    /// </summary>
     public void LoadData()
     {
         var list = CSVReader.Read(csvFilePath + csvFileName);
